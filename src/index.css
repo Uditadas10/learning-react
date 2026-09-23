@@ -24,10 +24,11 @@ body,
   overflow: hidden;
 }
 .journal-page{
+  display:flex;
+  flex-direction: column;
   height: 80vh;
-  width: 300px;
+  width:300px;
   border-radius: 30px;
-  display: flex;
   background-color: #F6FFDC;
   overflow: hidden;
 }
@@ -245,5 +246,148 @@ border-radius: 50px;
   background-color: orange;
   border-radius: 50%;
   height: 25px;
-
 }
+.status-bar-journal{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 14px;
+  box-sizing: border-box;
+}
+.time-journal{
+  font-size: 12px;
+  font-weight:600;
+  
+}
+.charge-journal{
+  display:flex;
+  gap:2px;
+  align-items: center;
+}
+.charge-journal svg{
+  width: 14px;
+  height:14px;
+}
+.Journal-scorer{
+text-align: center;
+}
+.My-journal{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 14px; 
+  align-items: center;
+  margin: 0px;
+}
+.journal-arrow, .Ellipsis{
+  background-color: orange;
+  border-radius: 50px;
+  height: 25px;
+  margin: 10px 10px 10px 10px;
+}
+.Journal-scorer > h1 {
+  margin: 0 0 0;
+}
+
+.Journal-scorer > p {
+  margin: 5px 0;
+}
+.emotions {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 10px 10px 10px;
+  height: 40vh;
+  width: 275px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.emotions h1 {
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+}
+
+.emotions p {
+  margin: 0 0 0 0px;
+  font-size: 12px;
+}
+.emotions-text p{
+  margin-left: 10px;
+}
+
+/* Four emotions in one row */
+.level {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 20px 15px;
+  box-sizing: border-box;
+}
+
+/* Each emotion */
+.happy,
+.sad,
+.calm,
+.anxious {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+/* The tube */
+.tube {
+  width: 40px;
+  height: 150px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0px;
+}
+
+/* Colored part inside tube */
+.fill {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Individual emotion colors */
+.happy .fill {
+  background-color: orange;
+}
+
+.sad .fill {
+  background-color: brown;
+}
+
+.calm .fill {
+  background-color: green;
+}
+
+.anxious .fill {
+  background-color: gray;
+}
+
+.percentage {
+  font-size: 14px;
+}
+.new-jounal{
+  align-items: center;
+  margin-left: 10px;
+  height: 40px;
+  width: 280px;
+  font-size: 18px;
+  background-color: orange;
+  border-radius: 12px;
+  text-align: center;
+}
+.new-jounal p{
+  padding: 8px;
+}
+
